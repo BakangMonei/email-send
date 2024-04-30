@@ -17,14 +17,14 @@ app.post('/send-email', async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'bakangmonei2@gmail.com',
-            pass: 'ooecgothgtofixdk'
+            user: '',
+            pass: ''
         }
     });
 
     // Email options
     const mailOptions = {
-        from: 'bakangmonei2@gmail.com',
+        from: '',
         to: to,
         subject: subject,
         text: text
